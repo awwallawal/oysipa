@@ -464,7 +464,7 @@ nav .navbar .navLink li:hover .drop-down {
 }
 
 .swiper-wrapper .slide-one {
-    background-image: linear-gradient(to bottom, rgba(63, 60, 60, 0.7), rgba(0, 0, 0, 0.7)), url(../oy_image/Gov_Hosp_Comm.webp);
+    background-image:  url(../oy_image/Gov_Hosp_Comm.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -490,9 +490,11 @@ nav .navbar .navLink li:hover .drop-down {
     justify-content: center;
     align-items: flex-start;
     padding: 2rem;
+    background: rgba(190,190,190, 0.2);
 }
 
 .home .slide .col-1 h4 {
+    text-shadow: 0 0 2px #141622;
     font-size: 1.4rem;
     font-weight: 100;
     letter-spacing: 3px;
@@ -500,6 +502,7 @@ nav .navbar .navLink li:hover .drop-down {
 }
 
 .home .slide .col-1 h1 {
+    text-shadow: 0 0 2px #141622;
     font-size: 4rem;
     font-weight: 100;
     letter-spacing: 3px;
@@ -512,6 +515,7 @@ nav .navbar .navLink li:hover .drop-down {
 
 .home .slide .col-1 p {
     font-size: 1.6rem;
+    text-shadow: 0 0 3px #141622;
 }
 
 .slide-one .button {
