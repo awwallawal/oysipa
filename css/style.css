@@ -404,7 +404,7 @@ nav .navbar .navLink li:hover .drop-down {
         /* Glassmorphism Effect */
         backdrop-filter: blur(16px) saturate(127%);
         -webkit-backdrop-filter: blur(16px) saturate(127%);
-        background-color: rgba(17, 25, 40, 0.55);
+        background-color: rgba(130, 163, 223, 0.55);
         border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.125);
         display: none;
@@ -452,56 +452,161 @@ nav .navbar .navLink li:hover .drop-down {
 
 /* Hero Section */
 .home .slide {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 100dvh;
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
-    justify-content: center;
-    padding: 4rem;
+    justify-content: flex-start;
+    padding: 6rem;
     color: #fff;
 }
 
 .swiper-wrapper .slide-one {
-    background-image: linear-gradient(to bottom, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0.7)), url(../oy_image/mapo_hall.jpg);
+    background-image: linear-gradient(to bottom, rgba(63, 60, 60, 0.7), rgba(0, 0, 0, 0.7)), url(../oy_image/mapo_hall.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.swiper-wrapper .slide-one .col-2 {
-    /* border: 1px solid red; */
+/* .swiper-wrapper .slide-one .col-2 {
+    border: 1px solid red;
     display: flex;
     padding: 2rem;
-}
+} */
 
-.swiper-wrapper .slide-one img {
+/* .swiper-wrapper .slide-one img {
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
         filter: drop-shadow(0 0 0.75rem rgb(187, 182, 183));
         height: 60rem;
-}
+} */
 
 .home .slide .col-1 {
     /* border: 1px solid red; */
-    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
 }
 
 .home .slide .col-1 h4 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 100;
     letter-spacing: 3px;
-    margin-bottom: -1rem;
+    /* margin-bottom: -1rem; */
 }
 
 .home .slide .col-1 h1 {
-    font-size: 5.2rem;
-    font-weight: 200;
+    font-size: 4rem;
+    font-weight: 100;
     letter-spacing: 3px;
     /* padding-bottom: 3rem; */
 }
 
 .home .slide .col-1 h1 span {
+    /* background: #850504; */
+}
+
+.home .slide .col-1 p {
+    font-size: 1.6rem;
+}
+
+.slide-one .button {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.slide-one .button .about, .slide-one .button .learn {
+    padding: 1.2rem 3rem;
     background: var(--main-color);
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* Media Queries Hero Section */
+@media(max-width:901px) {
+    .home .slide .col-1 p {
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width:775px) {
+    .slide-one .button .about, .slide-one .button .learn {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width:718px) {
+    .home .slide .col-1 p {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+}
+
+@media(max-width:673px) {
+    .slide-one .button .about, .slide-one .button .learn {
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width:579px) {
+    .slide-one .button .about, .slide-one .button .learn {
+        /* font-size: 1.2rem; */
+        padding: 0.7rem 1.6rem;
+    }
+}
+
+@media(max-width:579px) {
+    .slide-one .button {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    .slide-one .button .about, .slide-one .button .learn {
+        font-size: 1.6rem;
+        padding: 1.2rem 2.4rem;
+        
+    }
+
+    .home .slide .col-1 p {
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+
+}
+
+@media(max-width:559px) {
+    .home .slide .col-1 h4 {
+        font-size: 1.2rem;
+        font-weight: 100;
+        letter-spacing: 1px;
+        /* margin-bottom: -1rem; */
+    }
+}
+
+@media(max-width:420px) {
+    .swiper-wrapper .slide-one .col-1 {
+       padding: 0.3rem;
+       margin-left: -2rem;
+    }
+}
+
+@media(max-width:385px) {
+    .swiper-wrapper .slide-one .col-1 {
+       padding: 0.3rem;
+       margin-left: -2.2rem;
+    }
+
+    .home .slide .col-1 h1 {
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
 }
