@@ -1,0 +1,507 @@
+
+@font-face {
+    font-family: 'Arabic';
+    src: url(../fonts/fonnts.com-Brando_Arabic_Black.otf);
+    src: url(../fonts/fonnts.com-Brando_Arabic_Bold.otf);
+    src: url(../fonts/fonnts.com-Brando_Arabic_ExtraLight.otf);
+    src: url(../fonts/fonnts.com-Brando_Arabic_Hairline.otf);
+    src: url(../fonts/fonnts.com-Brando_Arabic_Light.otf);
+    src: url(../fonts/fonnts.com-Brando_Arabic_SemiBold.otf);
+    src: url(../fonts/fonnts.com-Brando_Arabic_Text.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    /* font-family: "brandoArabic", sans-serif; */
+    font-family: "Arabic", sans-serif;
+}
+
+html {
+    font-size: 65.5%;
+}
+
+:root {
+    --main-color: #850504;
+    --font-color: #141622;
+}
+
+/* ==== Top header section start === */
+.top-header .out-box {
+    width: 100%;
+    background: var(--main-color);  
+}
+
+.top-header .out-box .inside-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--font-color);
+    padding: 1rem 0;
+    clip-path: polygon(8% 0%, 92% 0%, 96% 100%, 5% 100%);
+}
+
+.out-box .inside-box .col-1 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 13rem;
+}
+.out-box .inside-box .col-1 span {
+    font-size: 1.5rem;
+}
+
+.out-box .inside-box .col-1 span i {
+    color: var(--main-color);
+    padding-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.out-box .inside-box .col-2 {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 13rem;   
+}
+
+.out-box .inside-box .col-2 a,
+.out-box .inside-box .col-2 span,
+.out-box .inside-box .col-2 .social i {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.out-box .inside-box .col-2 .social {
+    display: flex;
+    gap: 0.9rem;
+
+}
+
+.out-box .inside-box .col-2 a i {
+    padding-right: 0.5rem;
+}
+
+.out-box .inside-box .col-2 i:hover,
+.out-box .inside-box .col-2 a:hover {
+    color: var(--main-color);
+}
+
+.others {
+    display: none;
+}
+
+/* === Media Query For the Header Section === */
+/* ====Breakpoint 1 */
+@media(max-width:1150px){
+    .out-box .inside-box .col-1 {
+        margin-left: 8rem;
+    }
+
+    .out-box .inside-box .col-2 {
+        margin-right: 8rem;
+    }
+}
+
+/* ===== Breakpoint 2 */
+
+@media(max-width:1070px){
+    
+    .out-box .inside-box .col-1 span {
+        font-size: 1.0rem;
+    }
+    
+    .out-box .inside-box .col-1 span i {
+        color: var(--main-color);
+        padding-right: 0.5rem;
+        font-size: 0.7rem;
+    }
+    
+    .out-box .inside-box .col-2 a,
+    .out-box .inside-box .col-2 span,
+    .out-box .inside-box .col-2 .social i {
+        color: #fff;
+        font-size: 1.0rem;
+        transition: 0.4s;
+    }
+
+}
+
+/* ==== Breakpoint 3: Disappearenace of Top Header  */
+
+/* @media(max-width:780px){
+    .top-header {
+        display: none;
+    }
+} */
+
+@media(max-width:780px){
+    .top-header .inside-box .col-1 {
+        display: none;
+    }
+
+    .top-header .inside-box .col-2 {
+        margin-left: 25rem;
+    }
+}
+
+@media(max-width:591px){
+    .top-header .inside-box .col-2 {
+        margin-left: 18rem;
+    }
+}
+
+@media(max-width:517px){
+    .top-header .inside-box .col-2 {
+        margin-left: 13rem;
+    }
+}
+
+@media(max-width:465px){
+    .top-header .inside-box .col-2 {
+        margin-left: 10rem;
+    }
+}
+
+@media(max-width:434px){
+    .top-header .inside-box .col-2 {
+        margin-left: 6rem;
+    }
+}
+
+@media(max-width:392px){
+    .top-header .inside-box .col-2 {
+        margin-left: 4rem;
+    }
+}
+
+/* ===== Media Query for Top Header Ends ==== */
+
+ /* === Nabar Section Starts Here === */
+.header {
+    width: 100%;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 9.5%;
+    background: #bba2a2;
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5), 0 0 10px rgba(190,190,190, 0.5);
+    z-index: 111;
+    transition: 0.4s ease;  
+ }
+
+.header .logo img {
+    width: 150px;
+ }
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav .navbar ul li {
+    padding: 2.5rem 0.5rem;
+}
+
+nav .navbar ul li:hover, 
+nav .others i:hover {
+    color: var(--main-color);
+}
+
+nav .navbar .navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+nav .navbar .navLink li a {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav .others {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav .others i {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+nav .others .addBtn {
+    position: relative;
+    color: #fff;
+    background: var(--main-color);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.3rem;
+    border-radius: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+nav .others .addBtn:hover {
+    background-color: var(--font-color);
+    color: #fff;
+
+}
+
+nav .others .addBtn i,
+nav .others .addBtn i:hover {
+    color: #fff ;
+    padding-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+#menuBtn {
+    font-size: 2.5rem;
+}
+
+nav .navbar ul li a:hover, 
+nav .navbar ul li a.active {
+    color: var(--main-color);
+}
+
+/* Drop-down Link In the Navbar */
+/* Hide the dropdown by default */
+nav .navbar .navLink .drop-down {
+    position: absolute;
+    top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    text-align: justify;
+    min-width: 250px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+    padding: 1rem 0 0;
+    gap: 0.2rem; /* Added correct gap unit */
+    display: none;
+}
+
+/* Only show the dropdown when hovering over the li, not the entire navLink */
+nav .navbar .navLink li:hover .drop-down {
+    display: block;
+}
+
+/* Styling for dropdown list items */
+.navbar .navLink .drop-down li {
+    border-bottom: 1px solid rgba(190, 190, 190, 0.5);
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    z-index: 100;
+    overflow: hidden;
+}
+
+/* Links inside dropdown */
+.navbar .navLink .drop-down li a {
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+}
+
+/* Hover effect for dropdown items */
+.navbar .navLink .drop-down li:hover a {
+    font-size: 1.7rem;
+    /* padding-left: 0.5rem; */
+    /* background-color: var(--main-color); */
+    color: var(--main-color);
+    padding: 0.5rem;
+}
+
+/* Inner Dropdown Menu */
+.drop-down li .drop-down-two {
+    width: 200px;
+    position: absolute;
+    left: 200px;
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(32, 17, 17, 0.5);
+    padding: 1rem 0 0;
+    z-index: 111;
+    overflow: hidden;
+    display: none;
+}
+
+.drop-down li:hover .drop-down-two {
+    display: flex;
+}
+
+.navbar .navLink .drop-down li .drop-down-two li:hover a {
+    color: #fff;
+    background: var(--main-color);
+    padding: 0.5rem;
+}
+/* You can replicate the inner dropdown menu for those inner and inner just change the class */
+
+/* === Media Queries For the Header Section */
+@media(max-width:1385px) {
+    nav .navbar ul li {
+        padding: 2.5rem 0;
+    }
+
+    nav .others {
+        gap: 1rem;
+    }
+
+    nav .navbar .navLink {
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width:1220px) {
+
+    .others {
+        display: flex;
+    }
+
+    #menuBtn {
+        color: var(--main-color);
+        font-size: 3.5rem;
+    }
+
+    nav .navbar .navLink {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 5.8rem;
+        width: 96%;
+        left: 0px;
+        margin-left: 0.5rem;
+        box-shadow: 0 0 5px rgba(190, 190, 190, 0.5), 0 0 10px rgba(190, 190, 190, 0.5);
+        padding-left: 30px;
+        transition: 0.5s ease-in-out;
+        /* Glassmorphism Effect */
+        backdrop-filter: blur(16px) saturate(127%);
+        -webkit-backdrop-filter: blur(16px) saturate(127%);
+        background-color: rgba(17, 25, 40, 0.55);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+        display: none;
+    }
+
+    nav .navbar .navLink.active {
+        display: flex;
+    }
+
+    .header .sticky {
+        padding: 0.6rem 9.5%;
+    }
+
+    nav .navbar ul li {
+        padding:1rem 0;
+        width: 100%;
+    }
+
+    nav .navbar .navLink .drop-down {
+        position: relative;
+        top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
+        text-align: justify;
+        min-width: 250px;
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+        padding: 1rem 4rem 3rem 4rem;
+        gap: 0.2rem; /* Added correct gap unit */
+        display: none;
+    }
+
+    .drop-down li .drop-down-two {
+        position: sticky;
+        margin-top: 0rem;
+        display: none;
+        background: transparent;
+        width: 300px;
+        overflow: hidden;
+    }
+}
+
+
+/* Hero Section */
+.home .slide {
+    border: 1px solid red;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    color: #fff;
+}
+
+.swiper-wrapper .slide-one {
+    background-image: linear-gradient(to bottom, rgba(33, 31, 31, 0.7), rgba(0, 0, 0, 0.7)), url(../oy_image/mapo_hall.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper-wrapper .slide-one .col-2 {
+    /* border: 1px solid red; */
+    display: flex;
+    padding: 2rem;
+}
+
+.swiper-wrapper .slide-one img {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: drop-shadow(0 0 0.75rem rgb(187, 182, 183));
+        height: 60rem;
+}
+
+.home .slide .col-1 {
+    /* border: 1px solid red; */
+    flex: 1 1 20rem;
+}
+
+.home .slide .col-1 h4 {
+    font-size: 1.8rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: -1rem;
+}
+
+.home .slide .col-1 h1 {
+    font-size: 5.2rem;
+    font-weight: 200;
+    letter-spacing: 3px;
+    /* padding-bottom: 3rem; */
+}
+
+.home .slide .col-1 h1 span {
+    background: var(--main-color);
+}
