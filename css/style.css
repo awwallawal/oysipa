@@ -454,7 +454,7 @@ nav .navbar .navLink li:hover .drop-down {
 .home .slide {
     /* border: 1px solid red; */
     width: 100%;
-    height: 80dvh;
+    height: 100vh;
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
