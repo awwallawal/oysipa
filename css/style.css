@@ -495,17 +495,17 @@ nav .navbar .navLink li:hover .drop-down {
 
 .home .slide .col-1 h4 {
     text-shadow: 0 0 2px #141622;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 100;
-    letter-spacing: 3px;
-    /* margin-bottom: -1rem; */
+    /* letter-spacing: 3px; */
+    margin-bottom: -1.5rem;
 }
 
 .home .slide .col-1 h1 {
     text-shadow: 0 0 2px #141622;
-    font-size: 4rem;
-    font-weight: 100;
-    letter-spacing: 3px;
+    font-size: 5rem;
+    font-weight: 900;
+    /* letter-spacing: 3px; */
     /* padding-bottom: 3rem; */
 }
 
@@ -514,7 +514,7 @@ nav .navbar .navLink li:hover .drop-down {
 }
 
 .home .slide .col-1 p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-shadow: 0 0 3px #141622;
 }
 
