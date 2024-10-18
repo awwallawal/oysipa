@@ -633,6 +633,12 @@ nav .navbar .navLink li:hover .drop-down {
       }
 }
 
+@media(max-width:630px){
+    .swiper {
+        height: 120vh;
+    }
+}
+
 @media(max-width:548px){
     .headline h1 {
         font-size: 4rem;
@@ -669,6 +675,12 @@ nav .navbar .navLink li:hover .drop-down {
         font-weight: 100;
         padding: 1rem 2rem;
       }
+}
+
+@media(max-width:377px){
+    .swiper {
+        height: 130vh;
+    }
 }
 
 @media(max-width:376px) {
