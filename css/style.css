@@ -10,6 +10,20 @@
     src: url(../fonts/fonnts.com-Brando_Arabic_Text.otf);
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url(../fonts/poppins/Poppins-Black.ttf);
+    src: url(../fonts/poppins/Poppins-Bold.ttf);
+    src: url(../fonts/poppins/Poppins-ExtraBold.ttf);
+    src: url(../fonts/poppins/Poppins-ExtraLight.ttf);
+    src: url(../fonts/poppins/Poppins-Italic.ttf);
+    src: url(../fonts/poppins/Poppins-Light.ttf);
+    src: url(../fonts/poppins/Poppins-Medium.ttf);
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+    src: url(../fonts/poppins/Poppins-SemiBold.ttf);
+    src: url(../fonts/poppins/Poppins-Thin.ttf);
+}
+
 
 *{
     margin: 0;
@@ -662,4 +676,183 @@ nav .navbar .navLink li:hover .drop-down {
         font-size: 1.2rem;
         padding: 1.5rem 1rem;
       }
+}
+
+/* ====First Section ===== */
+.search{
+    /* position: relative; */
+    padding: 2rem 16rem;
+    background: #f7f2f2;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search .find {
+    /* border: 1px solid red; */
+    /* max-width: 1000px; */
+    /* width: 100%; */
+    padding: 2.5rem;
+    /* position: absolute; */
+    /* top: -7em; */
+    /* z-index: 111; */
+    background: #fff;
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5), 0 0 10px rgba(190, 190, 190, 0.5);
+    /* overflow: hidden; */
+}
+
+.find .find-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.find h3 {
+    font-size: 2.7rem;
+    letter-spacing: 1px;
+    padding-bottom: 2rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: var(--font-color);
+    /* border: 1px solid red;
+    width: 100%;
+    margin: 0 auto; */
+    text-align: center;
+}
+
+.find .find-row h4 {
+    font-size: 1.7rem;
+    color: var(--font-color);
+    padding-bottom: 1.5rem;
+}
+
+.find .find-row select {
+    border: 1px solid #646161;
+    font-size: 1.5rem;
+    width: 200px;
+    font-weight: 900;
+    height: 4rem;
+    padding: 0 1rem;
+    color: #646161;
+    font-family: "Poppins", sans-serif;
+}
+
+.find .find-row select option {
+    padding: 0.5rem;
+    border-bottom: 1px solid #646161;
+}
+
+.search .search-btn button {
+    background: var(--main-color);
+    margin-top: 4rem;
+    padding: 1.3rem 2rem;
+    border-radius: 0.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: 0.5s ease;
+}
+
+.search .search-btn button i {
+    padding: 0.5rem;
+}
+
+.search .search-btn button:hover {
+    background-color: var(--font-color);
+}
+
+/* ==== Media Queries First Section ==== */
+
+@media(max-width:948px){
+    .find .find-row {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .find .find-row {
+        gap: 2rem;
+    }
+        
+    .find .find-row h4 {
+        font-size: 1.4rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .search .search-btn button {
+        margin-top: 2.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:696px){
+    .find .find-row select {
+        font-size: 1.5rem;
+        width: 150px;
+        height: 3rem;
+        padding: 0 0.5rem;
+        color: #646161;
+    }
+    
+    .search .search-btn button {
+        margin-top: 4rem;
+        font-size: 1.2rem;
+        padding: 1.3rem 1rem;
+    }
+  
+}
+
+@media(max-width:550px){
+    .search .find {
+        padding: 1rem;
+    }
+}
+
+@media(max-width:514px){
+    .search .find {
+        padding: 0.3rem;
+    }
+}
+
+@media(max-width:550px){
+    .find .find-row select {
+        font-size: 1.2rem;
+        width: 130px;
+    }
+
+    .find .find-row h4 {
+        font-size: 1.2rem;
+    }
+
+    .search .search-btn button {
+        margin-top: 4rem;
+        font-size: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .find h3 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:442px){
+    .find .find-row {
+        gap: 1rem;
+    }
+}
+
+@media(max-width:420px){
+    .find .find-row select {
+        font-size: 1rem;
+        width: 1105x;
+    }
+
+    .find .find-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
 }
