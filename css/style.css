@@ -1927,3 +1927,30 @@ section h1 span,
         padding: 2rem 7rem;
     }
 }
+
+.client .para {
+    font-size: large;
+    text-align: start;
+}
+
+.client .para .finance_guide {
+    margin-top: 2rem;
+    padding: 1rem 4rem;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: 100;
+    background: var(--main-color);
+}
+
+.client .para .finance_guide a {
+    color: #fff;
+}
+
+.oyo_nigeria {
+    display: flex;
+    gap: 2rem;
+}
+
+.oyo_nigeria a {
+    color: #fff;
+}
