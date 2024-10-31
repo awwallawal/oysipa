@@ -1931,6 +1931,7 @@ section h1 span,
 .client .para {
     font-size: large;
     text-align: start;
+    font-family: "Poppins", sans-serif;
 }
 
 .client .para .finance_guide {
@@ -1953,4 +1954,33 @@ section h1 span,
 
 .oyo_nigeria a {
     color: #fff;
+}
+
+.parag {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.parag .img_cont {
+    /* height: 60rem; */
+    /* border: 1px solid red; */
+}
+
+.parag .img_cont img {
+    border-radius: 1.6rem;
+}
+
+.manage_team {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+.team_card img {
+    width: 80%;
+    border-radius: 2rem;
 }
