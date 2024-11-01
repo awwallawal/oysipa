@@ -1021,6 +1021,61 @@ section {
     background-color: var(--font-color);
 }
 
+.oyo_nigeria {
+    display: flex;
+    gap: 2rem;
+}
+
+.oyo_nigeria a {
+    color: #fff;
+}
+
+/* Media Queries for Market Section */
+
+@media(max-width:1174px){
+    .market .col-4 button {
+        margin-top: 2.5rem;
+        padding: 1.5rem 2.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:1012px){
+    .market .col-4 button {
+        margin-top: 1.5rem;
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:902px){
+    .market .col-3 {
+        display: none;
+    }
+}
+
+@media(max-width:692px){
+    .oyo_nigeria {
+        flex-direction: column;
+    }
+
+    .market .col-4 button {
+        padding: 1.5rem 2.5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width:580px){
+    .market .col-4 button {
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    section {
+        padding: 2.5rem 6rem;
+    }
+}
+
 /* Second Market Section: Counter Section Starts */
 .counter{
     width: 100%;
@@ -1032,6 +1087,7 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    border: 1px solid green;
 }
 
 .counter .container {
@@ -1052,7 +1108,7 @@ section {
 
 .counter .container span.num {
     padding: 1rem 0;
-    font-size: 4.6rem;
+    font-size: 3.8rem;
     font-weight: 600;
     color: #fff;
 }
@@ -1067,6 +1123,25 @@ section {
     padding-right: 0.5rem;
 }
 
+/* Media Queries */
+
+@media(max-width:969px){
+    .counter .container span.num {
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:778px){
+    .counter .container span.num {
+        font-size: 2.6rem;
+    }
+
+    .counter{
+        grid-template-columns: 1fr 1fr;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
 
 /* <!-- Arrival Section Starts --> */
 
@@ -1527,7 +1602,7 @@ section h1 span,
 .quality .qul-row .col-2 img {
     width: auto;
     height: auto;
-    border-radius: 10rem;
+    border-radius: 1rem;
     margin-left: 8rem;
 }
 
@@ -1615,6 +1690,13 @@ section h1 span,
         font-size: 2.4rem;
     }
 }
+
+@media(max-width:550px){
+    .quality .qul-row .col-2 img {
+        display: none;
+    }
+}
+
 
 /* Band Section */
 .brand {
@@ -1928,6 +2010,12 @@ section h1 span,
     }
 }
 
+@media(max-width:385px){
+    .footer .footer-bottom{
+        padding: 2rem 4rem;
+    }
+}
+
 .client .para {
     font-size: large;
     text-align: justify;
@@ -1944,15 +2032,6 @@ section h1 span,
 }
 
 .client .para .finance_guide a {
-    color: #fff;
-}
-
-.oyo_nigeria {
-    display: flex;
-    gap: 2rem;
-}
-
-.oyo_nigeria a {
     color: #fff;
 }
 
