@@ -2016,10 +2016,13 @@ section h1 span,
     }
 }
 
-.client .para {
-    font-size: large;
+.client .para{
+    font-size: 16px;
     text-align: justify;
-    font-family: "Poppins", sans-serif;
+}
+.client ul li {
+    font-size: 16px;
+    font-weight: 100;
 }
 
 .client .para .finance_guide {
@@ -2042,24 +2045,148 @@ section h1 span,
     gap: 5rem;
 }
 
-.parag .img_cont {
-    /* height: 60rem; */
-    /* border: 1px solid red; */
+/* CSS for the cef section */
+.cef {
+    display: flex; /* Enables side-by-side layout */
+    align-items: flex-start; /* Aligns items at the top */
+    background-color: #f7f8fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.parag .img_cont img {
-    border-radius: 1.6rem;
+/* Image container styling */
+.img_cont {
+    margin-right: 20px; /* Space between image and text */
 }
+
+.img_cont img {
+    width: 120px; /* Fixed width for image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Speech container styling */
+.speech {
+    flex: 1; /* Take the remaining space */
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6; /* Improved readability */
+    font-size: 16px; /* Base font size */
+    color: #333; /* Text color */
+}
+
+/* Media Query for mobile responsiveness */
+@media (max-width: 600px) {
+    .cef {
+        flex-direction: column; /* Stack vertically on small screens */
+        align-items: center; /* Center align */
+    }
+
+    .img_cont {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    .img_cont img {
+        width: 100px; /* Smaller image on mobile */
+    }
+
+    p {
+        font-size: 14px; /* Slightly smaller font on mobile */
+    }
+}
+
 
 .manage_team {
-    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 2rem;
-    gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f8fa;
+  }
+  
+  .team_card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .team_card:hover {
+    transform: scale(1.05);
+  }
+  
+  .team_card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .team_card h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Media Query for small screens */
+  @media (max-width: 600px) {
+    .manage_team {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+/* Events Page */
+.events-container {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+max-width: 1200px;
+padding: 20px;
+margin: 0 auto;
 }
 
-.team_card img {
-    width: 80%;
-    border-radius: 2rem;
+.event-card {
+position: relative;
+width: 100%;
+height: 300px;
+background-size: cover;
+background-position: center;
+border-radius: 8px;
+overflow: hidden;
+text-decoration: none;
+color: white;
+display: flex;
+align-items: flex-end;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.event-info {
+background: rgba(0, 0, 0, 0.5);
+padding: 15px;
+width: 100%;
+text-align: center;
+}
+
+.event-info h2 {
+font-size: 1.2em;
+margin-bottom: 5px;
+}
+
+.event-info p {
+font-size: 0.9em;
+}
+
+.event-card:hover {
+transform: scale(1.05);
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+  
