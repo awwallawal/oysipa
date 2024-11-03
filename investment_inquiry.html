@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Home/Landing Page Title and Tagline -->
-        <title>Events Recap</title>
+        <title>Investment Inquiry</title>
     <!-- FavIcon -->
         <link rel="apple-touch-icon" sizes="57x57" href="./favIcon/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="./favIcon/apple-icon-60x60.png">
@@ -279,60 +279,44 @@
 
     <!-- Access to Finance Page -->
     <section class="client">
-        <h4><i class="bx bx-car"></i>Event Recap</h4>
-        <h1>Business Events Recap In <span>Oyo State</span></h1>
-
-        <div class="para">            
-            <div class="events-container">
-                <a href="./iseyin_fapote_ogbomoso.html" target="_blank" class="event-card" style="background-image: url('./events_img/Iseyin_Ogbomosho.jpeg');">
-                    <div class="event-info">
-                    <h2>Iseyin-Fapote-Ogbomoso Road Commissioning</h2>
-                    <p>Event Date: May 30, 2024</p>
-                    </div>
-                </a>
-            
-                <a href="./oyo_iseyin.html" target="_blank" class="event-card" style="background-image: url('./events_img/Oyo_Iseyin.jpeg');">
-                    <div class="event-info">
-                    <h2>Oyo - Iseyin Road Commissioning</h2>
-                    <p>Event Date: September 15, 2023</p>
-                    </div>
-                </a>
-            
-                <a href="./light_oyo.html" target="_blank" class="event-card" style="background-image: url('./events_img/Light_Ibadan.jpeg');">
-                    <div class="event-info">
-                    <h2>Security Enhancement: Light-Up Oyo State</h2>
-                    <p>Event Date: January 20, 2024</p>
-                    </div>
-                </a>
-
-                <a href="./vehicles_security.html" target="_blank" class="event-card" style="background-image: url('./events_img/Vehicle_Distribute.jpeg');">
-                    <div class="event-info">
-                    <h2>Security Enhancement: Vechicle Distribution to Security Agencies</h2>
-                    <p>Event Date: January 10, 2024</p>
-                    </div>
-                </a>
-            
-                <a href="./jagz_hotel.html" class="event-card" style="background-image: url('./events_img/Jagz_Hotel.jpeg');">
-                    <div class="event-info">
-                    <h2>Hospitality Investment: Jagz Hotel Commissioning</h2>
-                    <p>Event Date: October 15, 2024</p>
-                    </div>
-                </a>
-            
-                <a href="./safer_loans.html" class="event-card" style="background-image: url('./events_img/Jagz_Makinde.jpeg');">
-                    <div class="event-info">
-                    <h2>SMEs Support: SAfER Loans to Stimiulate Economy</h2>
-                    <p>Event Date: February 17, 2024</p>
-                    </div>
-                </a>
-            </div>
+        <h4><i class="bx bx-car"></i>Contact US</h4>
+        <h1>Investment Inquiry Form</h1>
         
-          
-            
+        <div class="investment_container">
+            <p>We are excited to assist you in exploring investment opportunities in Oyo State. Our team is dedicated to providing comprehensive information, guidance, and support to ensure your investment journey is seamless and rewarding. Please complete the form below, and a representative from the Oyo State Investment Promotion Agency will contact you shortly to discuss your inquiries and provide tailored insights.</p>
+        
+            <form action="/submit-inquiry" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+                <label for="investment-type">Type of Investment Interest</label>
+                <select id="investment-type" name="investment-type" required>
+                    <option value="" disabled selected>Select investment type</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Infrastructure">Infrastructure</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Tourism">Tourism</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Other">Other</option>
+                </select>
+        
+                <label for="details">Inquiry Details</label>
+                <textarea id="details" name="details" rows="5" placeholder="Please provide details of your inquiry or specific areas of interest" required></textarea>
+        
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        
+            <p style="text-align: center; margin-top: 20px;">For additional assistance, feel free to <a href="contact_us.html" target="_blank" style="color: #0056a3; text-decoration: underline;">contact our office directly</a>. We look forward to helping you realize your investment goals in Oyo State!</p>
         </div>
-
-
         
+
     </section>
 
 
