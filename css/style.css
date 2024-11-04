@@ -2225,21 +2225,21 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     font-size: 16px;
 }
 
-.contact-info {
+.container .contact-section .contact-info {
     margin: 10px 0;
 }
 
-.contact-info strong {
+.container .contact-section .contact-info strong {
     color: #333;
 }
 
-form {
+.container .contact-section form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
-input, textarea {
+.container .contact-section input, .container .contact-section textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -2248,11 +2248,11 @@ input, textarea {
     font-size: 14px;
 }
 
-textarea {
+.container .contact-section textarea {
     grid-column: span 2;
 }
 
-button {
+.container .contact-section button {
     background-color: var(--main-color);
     color: #fff;
     padding: 10px;
@@ -2263,7 +2263,7 @@ button {
     grid-column: span 2;
 }
 
-button:hover {
+.container .contact-section button:hover {
     background-color: var(--font-color);
 }
 
