@@ -505,6 +505,10 @@ nav .navbar .navLink li:hover .drop-down {
     text-shadow: 0 0 4px black;
   }
 
+  .swiper-slide p {
+    color: #fff;
+  }
+
   .swiper-slide.slide-one {
     background: url(../oy_image/Gov_Hosp_Comm.webp);
     background-repeat: no-repeat;
