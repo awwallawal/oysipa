@@ -2342,3 +2342,132 @@ box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 .page_container.cta-button:hover {
     background-color: var(--font-color);
 }
+
+/* FAQ====== */
+.faq_content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.faq_content h1 {
+    color: #0056a3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq_content h2 {
+    color: #007acc;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.faq_content p {
+    margin-bottom: 20px;
+}
+.faq_content .question {
+    font-weight: bold;
+    color: #0056a3;
+}
+.faq_content .answer {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid #0056a3;
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .faq_content {
+        padding: 20px;
+    }
+    .faq_content h1 {
+        font-size: 24px;
+    }
+    .faq_content h2 {
+        font-size: 20px;
+    }
+}
+
+/* Investors Tips ========= */
+.investor_tips {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.investor_tips h1 {
+    color: #0056a3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.investor_tips h2 {
+    color: #007acc;
+    font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.investor_tips p {
+    margin-bottom: 20px;
+}
+
+.investor_tips .tip {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid #0056a3;
+}
+.investor_tips .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0056a3;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.investor_tips .cta-button:hover {
+    background-color: #003d73;
+}
+/* Responsive Design */
+@media (max-width: 600px) {
+    .investor_tips {
+        padding: 20px;
+    }
+    .investor_tips h1 {
+        font-size: 24px;
+    }
+    .investor_tips h2 {
+        font-size: 20px;
+    }
+}
+
+/* Quarrying ===== */
+.quarrying_content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.quarrying_content h1 {
+    color: #0056a3;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.quarrying_content h2 {
+    color: #007acc;
+    font-size: 22px;
+    margin-top: 30px;
+}
+.quarrying_content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+    .quarrying_content {
+        padding: 20px;
+    }
+}
